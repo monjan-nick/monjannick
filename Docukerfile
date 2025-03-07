@@ -1,0 +1,5 @@
+FROM quay.io/monjan-nick/md:beta
+RUN git clone https://github.com/monjan-nick/monjannick.git /root/LyFE/
+WORKDIR /root/Nick/
+RUN yarn install
+CMD ["npm", "start"]
